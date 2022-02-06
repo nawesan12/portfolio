@@ -62,7 +62,7 @@ export default function Layout({ children }) {
                 position:fixed;
                 background:white;
                 z-index:100;
-                border-bottom:2px solid rgba(255, 255, 255, .2);
+                border-bottom:5px solid rgba(255, 255, 255, .2);
             }    
 
             .list {
@@ -78,6 +78,10 @@ export default function Layout({ children }) {
             a {
                 padding:.5rem 1rem;
                 border-bottom:2px solid black;
+            }
+
+            a:hover {
+                border-bottom:2px solid #902020;
             }
 
             .language-setter {
