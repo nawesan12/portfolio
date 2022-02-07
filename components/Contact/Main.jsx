@@ -5,7 +5,6 @@ export default function Main() {
         <>
         <section className="titular">
             <h1>Contact</h1>
-            <h2>Reach me! ✨</h2>
         </section>
         <section className="contact-ways">
             <div className="main">
