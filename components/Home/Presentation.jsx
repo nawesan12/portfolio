@@ -77,7 +77,7 @@ export default function Presentation() {
                 letter-spacing:.15rem;
                 width:max-content;
                 margin: 0 auto;
-                animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+                animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
             }
 
 
