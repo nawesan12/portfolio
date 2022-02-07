@@ -7,7 +7,7 @@ export default function Presentation() {
             <article className="titular">
                 <h1>Nahuel Santillan</h1>
                 <hr />
-                <h1>Web Developer</h1>
+                <h1 className="typewriter">Web Developer</h1>
                 <hr />
                 <div className="resoom">
                     <a href="/files/Santillan.pdf" download className="link">
@@ -69,13 +69,14 @@ export default function Presentation() {
                 font-size:4rem;
             }
 
-            h1 {
+            .typewriter {
                 font-size:1.8rem;
                 overflow:hidden;
                 border-right:.15rem solid black;
                 white-space:nowrap;
                 letter-spacing:.15rem;
                 width:max-content;
+                margin: 0 auto;
                 animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
             }
 
