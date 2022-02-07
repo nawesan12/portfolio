@@ -22,5 +22,17 @@
         ],
         "repository": "nanutok",
         "deploy": "https://www.nanutok.vercel.app"
+    },
+    {
+        "title": "SpicySS",
+        "description": "I'm working in a JS and CSS framework!",
+        "thumbnail": "/images/spanish.png",
+        "languages": [
+            "Javascript",
+            "Next",
+            "Styled JSX"
+        ],
+        "repository": "spicyss",
+        "deploy": "https://www.spicyss.vercel.app"
     }
 ]
