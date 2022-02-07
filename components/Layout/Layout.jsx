@@ -10,7 +10,11 @@ export default function Layout({ children }) {
     const toggleLanguage = () => {
         language === 'en' ? setLanguage('es') : setLanguage('en')
     }
-    
+   
+    const hideNav = () => {
+        setNavOpen(false)
+    }
+
     return(
         <>
         <header className="app-header">
@@ -27,16 +31,16 @@ export default function Layout({ children }) {
             </div>
             <nav className={isOpen === true ? "navigation visible" : "navigation"}>
                 <div className="list">
-                    <li className="item">
+                    <li className="item" onClick={hideNav}>
                         <Link href="/"><a href="#">Home</a></Link>
                     </li>
-                    <li className="item">
+                    <li className="item" onClick={hideNav}>
                         <Link href="/about"><a href="#">About</a></Link>
                     </li>
-                    <li className="item">
+                    <li className="item" onClick={hideNav}>
                         <Link href="/projects"><a href="#">Projects</a></Link>
                     </li>
-                    <li className="item">
+                    <li className="item" onClick={hideNav}>
                         <Link href="/contact"><a href="#">Contact</a></Link>
                     </li>
                 </div>

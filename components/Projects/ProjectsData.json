@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Guzzi Autos",
+        "description": "Store, landing and contact web SPA for Guzzi Autos",
+        "thumbnail": "/images/spanish.png",
+        "languages": [
+            "Javascript",
+            "Next",
+            "Styled JSX"
+        ],
+        "repository": "guzzi-autos",
+        "deploy": "https://www.guzziautos.com"
+    },
+    {
+        "title": "Nanutok",
+        "description": "A clone of the Tiktok's layout, it'll be functional :)",
+        "thumbnail": "/images/english.png",
+        "languages": [
+            "Javascript",
+            "Next",
+            "Styled JSX"
+        ],
+        "repository": "nanutok",
+        "deploy": "https://www.nanutok.vercel.app"
+    }
+]
