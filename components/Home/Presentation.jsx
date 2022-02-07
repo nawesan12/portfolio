@@ -7,7 +7,7 @@ export default function Presentation() {
             <article className="titular">
                 <h1>Nahuel Santillan</h1>
                 <hr />
-                <span>Web Developer</span>
+                <h1>Web Developer</h1>
                 <hr />
                 <div className="resoom">
                     <a href="/files/Santillan.pdf" download className="link">
@@ -69,14 +69,17 @@ export default function Presentation() {
                 font-size:4rem;
             }
 
-            span {
+            h1 {
                 font-size:1.8rem;
                 overflow:hidden;
                 border-right:.15rem solid black;
                 white-space:nowrap;
                 letter-spacing:.15rem;
+                width:max-content;
                 animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
             }
+
+
 
             .titular {
                 text-align:center;
