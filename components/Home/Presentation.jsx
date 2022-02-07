@@ -137,7 +137,7 @@ export default function Presentation() {
             }
 
             .contact-ways {
-                height:90vh;
+                height:5vh;
                 width:100vw;
             }
 
