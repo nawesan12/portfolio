@@ -10,9 +10,9 @@ export default function Main() {
             <div className="main">
                 <h2 className="talk">{`Let's talk!`}</h2>
                 <div className="list">
-                    <li className="item"><a href="#" className="link">Send me an email</a></li>
-                    <li className="item"><a href="#" className="link">Github</a></li>
-                    <li className="item"><a href="#" className="link">LinkedIn</a></li>
+                    <li className="item"><a href="mailto:nsantillandev@gmail.com" className="link">Send me an email</a></li>
+                    <li className="item"><a href="https://www.github.com/nawesan12" className="link">Github</a></li>
+                    <li className="item"><a href="https://www.linkedin.com/in/nahuel-santillan" className="link">LinkedIn</a></li>
                 </div>
             </div>
             <div className="buzon-container">

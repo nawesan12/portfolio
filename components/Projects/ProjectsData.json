@@ -2,7 +2,7 @@
     {
         "title": "Guzzi Autos",
         "description": "Store, landing and contact web SPA for Guzzi Autos",
-        "thumbnail": "/images/spanish.png",
+        "thumbnail": "/images/projects/guzziautos.png",
         "languages": [
             "Javascript",
             "Next",
@@ -14,7 +14,7 @@
     {
         "title": "Nanutok",
         "description": "A clone of the Tiktok's layout, it'll be functional :)",
-        "thumbnail": "/images/english.png",
+        "thumbnail": "/images/projects/nanutok1.png",
         "languages": [
             "Javascript",
             "Next",
@@ -26,7 +26,7 @@
     {
         "title": "SpicySS",
         "description": "I'm working in a JS and CSS framework!",
-        "thumbnail": "/images/spanish.png",
+        "thumbnail": "/images/projects/spicyss2.jpg",
         "languages": [
             "Javascript",
             "Next",
@@ -34,5 +34,17 @@
         ],
         "repository": "spicyss",
         "deploy": "https://www.spicyss.vercel.app"
+    },
+    {
+        "title": "An architect's portfolio",
+        "description": "A little web presentation for Vanina Gonzalez",
+        "thumbnail": "/images/projects/vani.png",
+        "languages": [
+            "Javascript",
+            "Next",
+            "Styled JSX"
+        ],
+        "repository": "vani-portfolio-app",
+        "deploy": "https://www.vaninagonzalez.vercel.app"
     }
 ]

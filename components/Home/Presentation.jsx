@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import i18n from '../../i18n/index'
 
 export default function Presentation() {
     return (   
@@ -75,12 +76,10 @@ export default function Presentation() {
                 border-right:.15rem solid black;
                 white-space:nowrap;
                 letter-spacing:.15rem;
-                width:max-content;
+                max-width:max-content;
                 margin: 0 auto;
                 animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
             }
-
-
 
             .titular {
                 text-align:center;

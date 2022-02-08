@@ -5,10 +5,10 @@ import Image from 'next/image'
 export default function Layout({ children }) {
     const [isOpen, setNavOpen] = useState(false)
     const [language, setLanguage] = useState('en')
-    const [scroll, setScroll] = useState(0)
 
     const toggleLanguage = () => {
         language === 'en' ? setLanguage('es') : setLanguage('en')
+        console.log(language)
     }
    
     const hideNav = () => {

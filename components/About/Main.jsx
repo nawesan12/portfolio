@@ -131,7 +131,8 @@ export default function Main() {
                 .list {
                     display:flex;
                     width:60vw;
-                    flex-wrap:wrap;                   
+                    flex-wrap:wrap;
+                    justify-content:center;                   
                 }
 
                 .list li {
@@ -191,6 +192,8 @@ export default function Main() {
                     }
 
                     .list {
+                        display:flex;
+                        justify-content:center;
                         width:100vw;
                     }
 
