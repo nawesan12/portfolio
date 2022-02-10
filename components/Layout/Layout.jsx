@@ -164,7 +164,6 @@ export default function Layout({ children }) {
                     top:10vh;
                     left:0;
                     background:#ffffff;
-                    border-right:1px solid black;
                     height:90vh;
                     max-height:90vh;
                     width:75vw;
@@ -172,6 +171,7 @@ export default function Layout({ children }) {
                     align-items:center;
                     justify-content:space-evenly;
                     padding-top:10vh;
+                    box-shadow: 2px 2px 5px -2px #aaa;
                 }
 
                 .open {
