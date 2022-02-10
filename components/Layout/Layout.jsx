@@ -29,7 +29,14 @@ export default function Layout({ children }) {
             <div className="logo">
                 <h2>NS Dev</h2>
             </div>
-            <nav className={isOpen === true ? "navigation visible" : "navigation"}>
+            <nav className={isOpen === true ? "navigation open" : "navigation"}>
+                <div className={isOpen === true ? "nav_photo visible" : "nav_photo"}>
+                    <div className="photo-container">
+                        <Image src="/images/penguin.png" alt="Nahuel Santillan" layout="fill" objectFit="cover" />
+                    </div>
+                    <p>Nahuel Santillan</p>
+                    <span>Web Developer</span>
+                </div>
                 <div className="list">
                     <li className="item" onClick={hideNav}>
                         <Link href="/"><a href="#">Home</a></Link>
@@ -43,6 +50,30 @@ export default function Layout({ children }) {
                     <li className="item" onClick={hideNav}>
                         <Link href="/contact"><a href="#">Contact</a></Link>
                     </li>
+                </div>
+                <div className={isOpen === true ? "social-media visible" : "social-media"}>
+                    <li className="item"><a href="" className="media">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24" strokeWidth="2" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg>    
+                    </a></li>
+                    <li className="item"><a href="" className="media">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" strokeWidth="2" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                    </a></li>
+                    <li className="item"><a href="" className="media">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" strokeWidth="2" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                    </a></li>
                 </div>
             </nav>
             <div className={isOpen === true ? "language-setter language-visible" : "language-setter"}>
@@ -127,25 +158,30 @@ export default function Layout({ children }) {
                 }
 
                 .navigation {
-                    display:none;
-                    transition: all .4s ease;
+                    transform: translateX(-100%);
+                    transition: all .3s ease;
                     position:absolute;
                     top:10vh;
                     left:0;
                     background:#ffffff;
-                    border-radius:1rem;
-                    border:1px solid black;
-                    box-shadow:2px 2px 5px #ccc;
-                    height:15rem;
+                    border-right:1px solid black;
+                    height:90vh;
+                    max-height:90vh;
+                    width:75vw;
+                    flex-direction: column;
                     align-items:center;
                     justify-content:space-evenly;
-                    margin:1rem;
-                    right:0;
+                    padding-top:10vh;
+                }
+
+                .open {
+                    transform:translateX(0%);
                 }
 
                 .item {
                     font-weight:500;
                     font-size:1.4rem;
+                    margin-top:2.4rem;
                 }
 
                 .item a {
@@ -153,9 +189,44 @@ export default function Layout({ children }) {
                 }
 
                 .list {
-                    height:100%;
                     flex-direction:column;
-                    justify-content:space-evenly;
+                }
+
+                .nav_photo {
+                    display:flex;
+                    flex-direction:column;
+                    width:100%;
+                    align-items:center;
+                    font-size:1.5rem;
+                    font-weight:bold;
+                    line-height:0;
+                }
+
+                .nav_photo span {
+                    font-weight:400;
+                    font-size:1.2rem;
+                    line-height:1;
+                }
+
+                .photo-container {
+                    height:5rem;
+                    width:5rem;
+                    position:relative;
+                    display:block;
+                    margin:auto;
+                }
+
+                .social-media {
+                    max-width:100%;
+                    width:100%;
+                    justify-content:center;
+                }
+
+                .social-media .item {
+                    margin: 2.5rem .5rem;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
                 }
 
                 .burger {

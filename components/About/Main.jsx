@@ -7,7 +7,7 @@ export default function Main() {
                 <h1>About me</h1>
                 <div className="image-and-name">
                     <div className="image-container">
-                        <Image alt="Nahuel Santillan" src="/images/penguin.png" layout="fill" objectFit="cover"/>
+                        <Image alt="Nahuel Santillan" src="/images/penguin.png" layout="fill" objectFit="cover" priority/>
                     </div>
                     <div className="info">
                         <h2>{"I'm Nahuel Santillan"}</h2>

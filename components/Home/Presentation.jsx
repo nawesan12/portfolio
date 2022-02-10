@@ -38,7 +38,7 @@ export default function Presentation() {
             </article>
             <article className="myimage">
                 <div className="image-container">
-                    <Image alt="Santillan Nahuel Picture" src="/images/penguin.png" layout="fill" object-fit="cover"/>
+                    <Image alt="Santillan Nahuel Picture" src="/images/penguin.png" layout="fill" object-fit="cover" priority/>
                 </div>
             </article>
         </section>
