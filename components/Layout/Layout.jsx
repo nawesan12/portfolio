@@ -27,16 +27,16 @@ export default function Layout({ children }) {
                 </svg>
             </div>
             <div className="logo">
-                <h2>NS Dev</h2>
+                <h2 title="Nahuel Santillan - Web Developer">NS Dev</h2>
             </div>
             <nav className={isOpen === true ? "navigation open" : "navigation"}>
-                <div className={isOpen === true ? "nav_photo visible" : "nav_photo"}>
+                <section className="nav_photo">
                     <div className="photo-container">
                         <Image src="/images/penguin.png" alt="Nahuel Santillan" layout="fill" objectFit="cover" />
                     </div>
                     <p>Nahuel Santillan</p>
                     <span>Web Developer</span>
-                </div>
+                </section>
                 <div className="list">
                     <li className="item" onClick={hideNav}>
                         <Link href="/"><a href="#">Home</a></Link>
@@ -76,7 +76,7 @@ export default function Layout({ children }) {
                     </a></li>
                 </div>
             </nav>
-            <div className={isOpen === true ? "language-setter language-visible" : "language-setter"}>
+            <div title="Switch Language / ES - EN - FR" className={isOpen === true ? "language-setter language-visible" : "language-setter"}>
                 <div className="setter" onClick={toggleLanguage}>
                     <Image alt="Language Flag" src={`/images/${language === 'en' ? 'english.png' : 'spanish.png'}`} object-fit='cover' layout='fill' />
                 </div>
@@ -150,6 +150,18 @@ export default function Layout({ children }) {
                 color:white;
             }
 
+            .nav_photo {
+                display:none;
+            }
+
+            .photo-container {
+                display:none;
+            }
+
+            .navigation .social-media {
+                display:none;
+            }
+
             @media screen and (max-width:1200px) {
                 .app-header {
                     display:flex;
@@ -216,7 +228,8 @@ export default function Layout({ children }) {
                     margin:auto;
                 }
 
-                .social-media {
+                .navigation .social-media {
+                    display:flex;
                     max-width:100%;
                     width:100%;
                     justify-content:center;

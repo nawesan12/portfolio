@@ -16,7 +16,7 @@ export default function Main() {
                 </div>
             </div>
             <div className="buzon-container">
-                <Image src="/images/buzon.png" alt="Buzon" layout="fill" objectFit="cover" />
+                <Image title="I'm just a mailbox!" src="/images/buzon.png" alt="Buzon" layout="fill" objectFit="cover" />
             </div>
         </section>
         <style jsx>{`

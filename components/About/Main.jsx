@@ -1,4 +1,5 @@
 import Image from "next/image"
+import skills from './skills.json'
 
 export default function Main() {
     return (
@@ -7,7 +8,7 @@ export default function Main() {
                 <h1>About me</h1>
                 <div className="image-and-name">
                     <div className="image-container">
-                        <Image alt="Nahuel Santillan" src="/images/penguin.png" layout="fill" objectFit="cover" priority/>
+                        <Image title="Nahuel Santillan" alt="Nahuel Santillan" src="/images/penguin.png" layout="fill" objectFit="cover" priority/>
                     </div>
                     <div className="info">
                         <h2>{"I'm Nahuel Santillan"}</h2>
@@ -17,78 +18,16 @@ export default function Main() {
                 <section className="code-skills">
                     <h2>Skills</h2>
                     <div className="list">
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/html.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">HTML5</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/sass.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">SASS</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/js.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Javascript</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/react.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">React</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/next.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">NextJS</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/node.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">NodeJS</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/expo.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Expo</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/github.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Github</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/figma.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Figma</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/python.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Python</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/flask.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Flask</p>
-                        </li>
-                        <li>
-                            <div className="language-container">
-                                <Image src="/images/code/go-lang.png" alt="" layout="fill" objectFit="cover"/>
-                            </div>
-                            <p className="language">Go</p>
-                        </li>
+                        {
+                            skills.map((e, index) => (
+                                <li key={index}>
+                                    <div className="language-container">
+                                        <Image src={e.icon} alt="" layout="fill" objectFit="cover" title={e.language}/>
+                                    </div>
+                                    <p className="language">{e.language}</p>
+                                </li>
+                            ))
+                        }
                     </div>
                 </section>
             </section>

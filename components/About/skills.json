@@ -1,0 +1,62 @@
+[
+    {
+        "language": "HTML5",
+        "icon": "/images/code/html.png"
+    },
+    {
+        "language": "SASS",
+        "icon": "/images/code/sass.png"
+    },
+    {
+        "language": "Javascript",
+        "icon": "/images/code/js.png"
+    },
+    {
+        "language": "ReactJS",
+        "icon": "/images/code/react.png"
+    },
+    {
+        "language": "NextJS",
+        "icon": "/images/code/next.png"
+    },
+    {
+        "language": "Firebase",
+        "icon": "/images/code/firebase.png"
+    },
+    {
+        "language": "NodeJS",
+        "icon": "/images/code/node.png"
+    },
+    {
+        "language": "MongoDB",
+        "icon": "/images/code/mongodb.png"
+    },
+    {
+        "language": "GraphQL",
+        "icon": "/images/code/graphql.png"
+    },
+    {
+        "language": "Expo",
+        "icon": "/images/code/expo.png"
+    },
+    {
+        "language": "Github",
+        "icon": "/images/code/github.png"
+    },
+    {
+        "language": "Figma",
+        "icon": "/images/code/figma.png"
+    },
+    {
+        "language": "Python",
+        "icon": "/images/code/python.png"
+    },
+    {
+        "language": "Flask",
+        "icon": "/images/code/flask.png"
+    },
+    {
+        "language": "Go",
+        "icon": "/images/code/go-lang.png"
+    }
+]

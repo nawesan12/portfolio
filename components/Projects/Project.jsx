@@ -36,7 +36,6 @@ export default function Project(props) {
                     border-radius:.3rem;
                     display:flex;
                     flex-direction:column;
-
                 }
 
                 .thumbnail {
@@ -67,11 +66,6 @@ export default function Project(props) {
 
                 li {
                     list-style-type: none;
-                }
-
-                .icon-tabler-brand-github {
-                    border:2px solid black;
-                    border-radius:.3rem;
                 }
 
                 @media screen and (max-width:1200px) {

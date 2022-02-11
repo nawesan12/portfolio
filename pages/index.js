@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nahuel Santillan - Portfolio</title>
+        <title>Nahuel Santillan - Web Developer</title>
         <meta name="description" content="Nahuel Santillan's portfolio, come to check his profile!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

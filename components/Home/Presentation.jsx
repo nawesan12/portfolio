@@ -8,7 +8,7 @@ export default function Presentation() {
             <article className="titular">
                 <h1>Nahuel Santillan</h1>
                 <hr />
-                <h1 className="typewriter">Web Developer</h1>
+                <h1 className="typewriter"  title="Able to meet your needs and improve your business!">Web Developer</h1>
                 <hr />
                 <div className="resoom">
                     <a href="/files/Santillan.pdf" download className="link">
@@ -38,7 +38,7 @@ export default function Presentation() {
             </article>
             <article className="myimage">
                 <div className="image-container">
-                    <Image alt="Santillan Nahuel Picture" src="/images/penguin.png" layout="fill" object-fit="cover" priority/>
+                    <Image title="Nahuel Santillan" alt="Santillan Nahuel Picture" src="/images/penguin.png" layout="fill" object-fit="cover" priority/>
                 </div>
             </article>
         </section>
