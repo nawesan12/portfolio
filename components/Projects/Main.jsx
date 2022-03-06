@@ -1,11 +1,16 @@
 import ProjectsData from './ProjectsData.json'
 import Project from './Project'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export default function Main() {
+
+    const { t } = useTranslation()
+
     return(
         <>
         <section className="titular">
-            <h1>Projects</h1>
+            <h1>{t('projects:title')}</h1>
         </section>
         <section className="projects-container">
             {

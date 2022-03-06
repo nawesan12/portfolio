@@ -1,14 +1,33 @@
 import { useState } from "react"
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from "next/router"
+
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Layout({ children }) {
+
     const [isOpen, setNavOpen] = useState(false)
     const [language, setLanguage] = useState('en')
+    const [flag, setFlag] = useState('english.png')
+
+    const { t } = useTranslation();
+    const router = useRouter();
+    const { pathname, asPath } = router;
 
     const toggleLanguage = () => {
-        language === 'en' ? setLanguage('es') : setLanguage('en')
-        console.log(language)
+        language === "es" ? setLanguage('en') : 
+        language === "en" ? setLanguage('fr') :
+        language === "fr" ? setLanguage('es') : ""
+        router.push({ pathname }, asPath, { locale: language });
+
+        chooseFlag()
+    }
+
+    const chooseFlag = () => {
+        if(language === 'es') setFlag('spanish.png')
+        if(language === 'en') setFlag('english.png')
+        if(language === 'fr') setFlag('french.png')
     }
    
     const hideNav = () => {
@@ -35,20 +54,20 @@ export default function Layout({ children }) {
                         <Image src="/images/penguin.png" alt="Nahuel Santillan" layout="fill" objectFit="cover" />
                     </div>
                     <p>Nahuel Santillan</p>
-                    <span>Web Developer</span>
+                    <span>{t('common:webdev')}</span>
                 </section>
                 <div className="list">
                     <li className="item" onClick={hideNav}>
-                        <Link href="/"><a href="#">Home</a></Link>
+                        <Link href="/"><a className={router.pathname === "/" ? "link-active" : ""}>{t('common:home')}</a></Link>
                     </li>
                     <li className="item" onClick={hideNav}>
-                        <Link href="/about"><a href="#">About</a></Link>
+                        <Link href="/about"><a className={router.pathname === "/about" ? "link-active" : ""}>{t('common:about')}</a></Link>
                     </li>
                     <li className="item" onClick={hideNav}>
-                        <Link href="/projects"><a href="#">Projects</a></Link>
+                        <Link href="/projects"><a className={router.pathname === "/projects" ? "link-active" : ""}>{t('common:projects')}</a></Link>
                     </li>
                     <li className="item" onClick={hideNav}>
-                        <Link href="/contact"><a href="#">Contact</a></Link>
+                        <Link href="/contact"><a className={router.pathname === "/contact" ? "link-active" : ""}>{t('common:contact')}</a></Link>
                     </li>
                 </div>
                 <div className={isOpen === true ? "social-media visible" : "social-media"}>
@@ -78,7 +97,7 @@ export default function Layout({ children }) {
             </nav>
             <div title="Switch Language / ES - EN - FR" className={isOpen === true ? "language-setter language-visible" : "language-setter"}>
                 <div className="setter" onClick={toggleLanguage}>
-                    <Image alt="Language Flag" src={`/images/${language === 'en' ? 'english.png' : 'spanish.png'}`} object-fit='cover' layout='fill' />
+                    <Image alt="Language Flag" src={`/images/${flag}`} object-fit='cover' layout='fill' />
                 </div>
             </div>
         </header>
@@ -160,6 +179,10 @@ export default function Layout({ children }) {
 
             .navigation .social-media {
                 display:none;
+            }
+
+            .link-active {
+                border-bottom:2px solid #902020;
             }
 
             @media screen and (max-width:1200px) {

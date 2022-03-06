@@ -1,22 +1,26 @@
 import Image from "next/image"
 import skills from './skills.json'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Main() {
+
+    const { t } = useTranslation()
+
     return (
         <>
             <section className="presentation">
-                <h1>About me</h1>
+                <h1>{t('about:title')}</h1>
                 <div className="image-and-name">
                     <div className="image-container">
                         <Image title="Nahuel Santillan" alt="Nahuel Santillan" src="/images/penguin.png" layout="fill" objectFit="cover" priority/>
                     </div>
                     <div className="info">
-                        <h2>{"I'm Nahuel Santillan"}</h2>
-                        <p className="description">A 18yo web developer who loves learning new technologies and improving his skills to be a better developer everyday. I love doing magic through code.</p>
+                        <h2>{`${t('about:iam')} Nahuel Santillan`}</h2>
+                        <p className="description">{t('about:description')}</p>
                     </div>
                 </div>
                 <section className="code-skills">
-                    <h2>Skills</h2>
+                    <h2>{t('about:skills')}</h2>
                     <div className="list">
                         {
                             skills.map((e, index) => (

@@ -36,7 +36,7 @@
         "deploy": "https://www.spicyss.vercel.app"
     },
     {
-        "title": "An architect's portfolio",
+        "title": "Architect's portfolio",
         "description": "A little web presentation for Vanina Gonzalez",
         "thumbnail": "/images/projects/vani.png",
         "languages": [

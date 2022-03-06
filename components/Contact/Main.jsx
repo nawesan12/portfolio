@@ -1,16 +1,20 @@
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Main() {
+
+    const { t } = useTranslation();
+
     return(
         <>
         <section className="titular">
-            <h1>Contact</h1>
+            <h1>{t('contact:title')}</h1>
         </section>
         <section className="contact-ways">
             <div className="main">
-                <h2 className="talk">{`Let's talk!`}</h2>
+                <h2 className="talk">{`${t('contact:letstalk')}`}</h2>
                 <div className="list">
-                    <li className="item"><a href="mailto:nsantillandev@gmail.com" className="link">Send me an email</a></li>
+                    <li className="item"><a href="mailto:nsantillandev@gmail.com" className="link">{t('contact:sendemail')}</a></li>
                     <li className="item"><a href="https://www.github.com/nawesan12" className="link">Github</a></li>
                     <li className="item"><a href="https://www.linkedin.com/in/nahuel-santillan" className="link">LinkedIn</a></li>
                 </div>
