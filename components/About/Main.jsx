@@ -36,6 +36,11 @@ export default function Main() {
                 </section>
             </section>
             <style jsx>{`
+                @keyframes fadeIn {
+                    from { opacity:0; }
+                    to { opacity:1; }
+                }
+
                 h1 {
                     font-size:3rem;
                 }
@@ -54,6 +59,7 @@ export default function Main() {
                     width:100%;
                     display:flex;
                     align-items:center;
+                    animation: .3s fadeIn linear;
                 }
 
                 .info {
@@ -85,6 +91,7 @@ export default function Main() {
                     display:flex;
                     flex-direction:column;
                     align-items:center;
+                    animation: .3s fadeIn linear;
                 }
 
                 .code-skills {
