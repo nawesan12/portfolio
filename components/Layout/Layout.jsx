@@ -8,8 +8,8 @@ import useTranslation from 'next-translate/useTranslation'
 export default function Layout({ children }) {
 
     const [isOpen, setNavOpen] = useState(false)
-    const [language, setLanguage] = useState('en')
-    const [flag, setFlag] = useState('english.png')
+    const [language, setLanguage] = useState('es')
+    const [flag, setFlag] = useState('spanish.png')
 
     const { t } = useTranslation();
     const router = useRouter();
