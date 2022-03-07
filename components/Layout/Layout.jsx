@@ -107,7 +107,7 @@ export default function Layout({ children }) {
         </main>
 
         <footer>
-            <span className="attribution">Santillan Nahuel - 2022 - Web Developer</span>
+            <span className="attribution">Santillan Nahuel - 2022 - {t('common:webdev')}</span>
         </footer>
 
         <style jsx>{`
