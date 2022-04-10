@@ -6,6 +6,7 @@ export default function About() {
         <>
         <Head>
             <title>About - Nahuel Santillan</title>
+            <meta name="description" content="Nahuel Santillan is a web developer located in Argentina." />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 

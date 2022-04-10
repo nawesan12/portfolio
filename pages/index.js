@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Nahuel Santillan - Web Developer</title>
-        <meta name="description" content="Nahuel Santillan's portfolio, come to check his profile!" />
+        <meta name="description" content="Nahuel Santillan is a web developer located in Argentina. Come to check his profile and skills!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

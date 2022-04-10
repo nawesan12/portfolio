@@ -6,6 +6,7 @@ export default function Contact() {
         <>
         <Head>
             <title>Contact - Nahuel Santillan</title>
+            <meta name="description" content="Nahuel Santillan is a web developer located in Argentina. Contact him!" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 

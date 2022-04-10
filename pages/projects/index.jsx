@@ -6,6 +6,7 @@ export default function Projects() {
         <>
         <Head>
             <title>Projects - Nahuel Santillan</title>
+            <meta name="description" content="Nahuel Santillan is a web developer located in Argentina. Come to check his projects!" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
