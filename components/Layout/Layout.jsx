@@ -53,7 +53,7 @@ export default function Layout({ children }) {
                     <div className="photo-container">
                         <Image src="/images/penguin.png" alt="Nahuel Santillan" layout="fill" objectFit="cover" />
                     </div>
-                    <p>Nahuel Santillan</p>
+                    <p title="Nahuel Santillan">Nahuel Santillan</p>
                     <span>{t('common:webdev')}</span>
                 </section>
                 <div className="list">

@@ -8,9 +8,9 @@ export default function Presentation() {
         <>
         <section className="presentation">
             <article className="titular">
-                <h1>Nahuel Santillan</h1>
+                <h1 title='Nahuel Santillan - Web Developer'>Nahuel Santillan</h1>
                 <hr />
-                <h1 className="typewriter"  title="Able to meet your needs and improve your business!">{t('home:desarrollador')}</h1>
+                <h2 className="typewriter"  title="Able to meet your needs and improve your business!">{t('home:desarrollador')}</h2>
                 <hr />
                 <div className="resoom">
                     <a href="/files/Santillan.pdf" download className="link">
@@ -40,7 +40,7 @@ export default function Presentation() {
             </article>
             <article className="myimage">
                 <div className="image-container">
-                    <Image title="Nahuel Santillan" alt="Santillan Nahuel Picture" src="/images/penguin.png" layout="fill" object-fit="cover" priority/>
+                    <Image title="Nahuel Santillan" alt="Santillan Nahuel Web Developer" src="/images/penguin.png" layout="fill" object-fit="cover" priority/>
                 </div>
             </article>
         </section>

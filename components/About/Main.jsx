@@ -12,7 +12,7 @@ export default function Main() {
                 <h1>{t('about:title')}</h1>
                 <div className="image-and-name">
                     <div className="image-container">
-                        <Image title="Nahuel Santillan" alt="Nahuel Santillan" src="/images/penguin.png" layout="fill" objectFit="cover" priority/>
+                        <Image title="Nahuel Santillan" alt="Nahuel Santillan Web Developer" src="/images/penguin.png" layout="fill" objectFit="cover" priority/>
                     </div>
                     <div className="info">
                         <h2>{`${t('about:iam')} Nahuel Santillan`}</h2>
@@ -26,7 +26,7 @@ export default function Main() {
                             skills.map((e, index) => (
                                 <li key={index}>
                                     <div className="language-container">
-                                        <Image src={e.icon} alt="" layout="fill" objectFit="cover" title={e.language}/>
+                                        <Image src={e.icon} alt={"Nahuel Santillan" + e.language} layout="fill" objectFit="cover" title={e.language}/>
                                     </div>
                                     <p className="language">{e.language}</p>
                                 </li>

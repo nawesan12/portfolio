@@ -10,7 +10,7 @@ export default function Main() {
     return(
         <>
         <section className="titular">
-            <h1>{t('projects:title')}</h1>
+            <h1 title="Nahuel Santillan - Projects">{t('projects:title')}</h1>
         </section>
         <section className="projects-container">
             {
